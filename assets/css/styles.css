@@ -59,6 +59,7 @@ header {
 }
 
 .brand-logo {
+  color: #a101c9;
   width: 65px;
   height: 65px;
   object-fit: contain;
@@ -118,8 +119,8 @@ nav a:hover {
 h1 {
   font-family: "Bebas Neue", sans-serif;
   font-size: clamp(3rem, 9vw, 6.1rem);
-  color: #a101c9;
-  text-shadow:0 0 30px #d368f363;
+  color: #000000;
+  text-shadow:0 0 40px #d368f3e7;
   line-height: 0.94;
   letter-spacing: 0.02em;
   margin-bottom: 1rem;
