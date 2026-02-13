@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data:; connect-src 'self' https://api.emailjs.com; form-action 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; upgrade-insecure-requests" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
+  <title>Contact | Remnant Youth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <main class="shell">
+    <header>
+      <div class="brand"><img class="brand-logo" src="assets/img/biblelife.png" alt="Youth Bible Life Fellowship logo" loading="lazy" decoding="async">REMNANT YOUTH BIBLE LIFE FELLOWSHIP</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="#" class="stories-coming-soon" aria-disabled="true"><span>Stories</span><span>Coming Soon</span></a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="page-head">
+      <span class="eyebrow">Get Connected</span>
+      <h1 class="page-title">Contact Remnant Youth</h1>
+      <p class="page-intro">Ask a question, request prayer, or connect with a leader.</p>
+    </section>
+
+    <section class="contact-grid">
+      <article class="card">
+        <h2>Send a Message</h2>
+        <form id="contact-form" class="contact-form" action="#" method="post" novalidate>
+          <label class="visually-hidden" for="website">Website</label>
+          <input id="website" name="website" type="text" class="visually-hidden" tabindex="-1" autocomplete="off" />
+
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" maxlength="80" autocomplete="name" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" maxlength="120" autocomplete="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" maxlength="2000" required></textarea>
+
+          <button id="contact-submit" class="btn btn-main" type="submit">Send</button>
+          <p id="contact-status" class="contact-status" role="status" aria-live="polite"></p>
+        </form>
+      </article>
+
+      <article class="card contact-info">
+        <h2>Details</h2>
+        <p><strong>Email:</strong> remnantyouth@example.com</p>
+        <p><strong>Phone:</strong> 07123456789</p>
+        <p><strong>Address:</strong> 109-111 Cricklade Rd, Gorse Hill, Swindon SN2 1AB</p>
+        <p><strong>Friday Service:</strong> 6:00 PM</p>
+      </article>
+    </section>
+  </main>
+  <script src="assets/js/contact.js" defer></script>
+</body>
+</html>
