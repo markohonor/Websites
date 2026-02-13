@@ -118,6 +118,8 @@ nav a:hover {
 h1 {
   font-family: "Bebas Neue", sans-serif;
   font-size: clamp(3rem, 9vw, 6.1rem);
+  color: #a101c9;
+  text-shadow:0 0 30px #d368f363;
   line-height: 0.94;
   letter-spacing: 0.02em;
   margin-bottom: 1rem;
@@ -127,7 +129,7 @@ h1 {
 
 .lead {
   max-width: 56ch;
-  color: #e6dfd2;
+  color: #fefefe;
   line-height: 1.6;
   margin-bottom: 1.5rem;
   animation: rise 1s ease-out both;
