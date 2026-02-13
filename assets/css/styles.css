@@ -19,7 +19,7 @@ body {
   color: var(--paper);
   background:
     radial-gradient(circle at 15% 20%, rgba(243, 182, 58, 0.35), transparent 35%),
-    radial-gradient(circle at 80% 15%, rgba(31, 138, 138, 0.3), transparent 30%),
+    radial-gradient(circle at 80% 15%, rgba(122, 31, 138, 0.3), transparent 30%),
     linear-gradient(140deg, #0f1721 5%, #162131 45%, #1b2935 100%);
   overflow-x: hidden;
 }
@@ -247,6 +247,69 @@ h1 {
   color: var(--sun);
 }
 
+.landing-sections {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.feature-panel {
+  border: 1px solid rgba(246, 240, 227, 0.2);
+  border-radius: 14px;
+  padding: 1rem;
+  background: rgba(16, 24, 32, 0.42);
+  animation: rise 1.15s ease-out both;
+}
+
+.feature-panel h2 {
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.55rem;
+  color: var(--sun);
+  text-transform: uppercase;
+}
+
+.feature-panel p {
+  color: #e6dfd2;
+  line-height: 1.5;
+}
+
+.word-panel {
+  background:
+    linear-gradient(110deg, rgba(243, 182, 58, 0.2), rgba(31, 138, 138, 0.2)),
+    rgba(16, 24, 32, 0.5);
+}
+
+.word-verse {
+  font-size: 1.1rem;
+  color: #fff8e2;
+  margin-bottom: 0.3rem;
+}
+
+.word-ref {
+  font-size: 0.92rem;
+  opacity: 0.9;
+  letter-spacing: 0.05em;
+}
+
+.feature-link {
+  display: inline-block;
+  margin-top: 0.7rem;
+  color: var(--sun);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.feature-link:hover {
+  text-decoration: underline;
+}
+
 .page-head {
   margin-bottom: 1.5rem;
 }
@@ -409,6 +472,10 @@ h1 {
   }
 
   .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-grid {
     grid-template-columns: 1fr;
   }
 }
